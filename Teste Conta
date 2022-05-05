@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Teste2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Conta conta1 = new Conta();
+        System.out.println("Digite o número da sua Conta: ");
+        conta1.numero = Integer.parseInt(input.nextLine());
+        System.out.println("Digite seu nome: " );
+        conta1.cliente = input.nextLine();
+        System.out.println("Digite o valor a ser depositado");
+        double valor = Double.parseDouble(input.nextLine());
+        conta1.depositar(valor);
+        System.out.println("Digite o valor a ser sacado: ");
+        valor = Double.parseDouble(input.nextLine());
+        conta1.sacar(valor);
+
